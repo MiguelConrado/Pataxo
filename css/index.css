@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins,sans-serif;
+}
+:root{
+    --corPrincipal:rgb(26, 90, 150);
+}
+
+
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    color: var(--corPrincipal);
+
+    & h1{
+        font-size: 40px;
+        user-select: none;
+        font-style: italic;
+    }
+}
+
+/* NAV, MENU HAMBURGUER E SEUS LINKS */
+nav{
+    align-items: center;
+
+    text-align: right;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*Menu hambuguer*/
+#menu-hamburguer{
+    font-size: 40px;
+}
+
+/* navegacao e link*/
+.navegacao-container{
+    color: var(--corPrincipal);
+    display: none;
+    width: 200px;
+}
+.navegacao-container > a{
+    color: var(--corPrincipal);
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/* ------------------------- */
+
+/* INICIO*/
+.inicio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:inset 0px 10px 7px rgba(0, 0, 0, 0.788);
+
+    background-image: url(../img/povo-indigena.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* -------------------- ITENS INCIO -------------------------- */
+
+.inicio-div{
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    border-radius: 20px;
+
+    font-size: 30px;
+    color: white;
+
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+
+    
+    & a{
+        color: white;
+        font-size: 20px;
+
+        text-decoration: none;
+        font-weight: 500;
+        font-style: italic;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    & p{
+        font-size: 20px;
+        font-style: italic;
+    }
+}
+
+/* -------------------- Estrutura -------------------------- */
+
+#container-estrutura{
+    padding: 40px;
+    box-shadow:inset 0px 10px 7px rgba(0, 0, 0, 0.788);
+    & h2{
+        font-size: 40px;
+    }
+
+}
+.container-img{
+    height: 410px;
+    margin-bottom: 10px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    & p{
+        width: 370px;
+        word-wrap: break-word;
+        text-align: center;
+              
+        z-index: 999;
+        position: absolute;
+        font-size: 20px;
+
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1), 0.4s;
+        
+    }
+
+    & h3{
+        z-index: 999;
+        position: absolute;
+        transform: translateY(10px);
+
+        font-size: 30px;
+        text-align: left;
+
+        opacity: 0;
+        transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1),0.6s;
+    }
+
+    &:hover{
+        p, h3{opacity: 1;}
+        
+        p{transform: translateY(0px)}
+
+        h3{transform: translateY(-60px);}
+
+        img{filter: brightness(30%);}
+    }
+
+}
+
+.container-img >.img-estrutura{
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    height: 400px;
+    width: 100%;
+    object-fit:cover;
+    object-position: center center;
+}
+/* /--------------footer--------------------- */
+
+
+footer{
+    padding:20px;
+    transition: all 1s;
+
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+
+}
+.container-contato-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
