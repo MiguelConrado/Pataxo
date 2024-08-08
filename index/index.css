@@ -17,6 +17,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
 
     background-color: rgb(255, 255, 255);
     color: var(--corPrincipal);
@@ -30,8 +32,6 @@ header{
 
 /* NAV, MENU HAMBURGUER E SEUS LINKS */
 nav{
-    align-items: center;
-
     text-align: right;
     user-select: none;
     cursor: pointer;
@@ -41,13 +41,24 @@ nav{
 #menu-hamburguer{
     font-size: 40px;
 }
+#menu-hamburguer:hover + .navegacao-container{
+    transform: translateY(0px);
+    opacity: 1;
+    
+}
 
 /* navegacao e link*/
 .navegacao-container{
-    color: var(--corPrincipal);
     display: none;
     width: 200px;
+ 
+    color: var(--corPrincipal);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
 .navegacao-container > a{
     color: var(--corPrincipal);
     display: block;
@@ -61,7 +72,7 @@ nav{
 
 /* INICIO*/
 .inicio-container{
-    display: flex;
+    display: absolute;
     align-items: center;
     justify-content: center;
 

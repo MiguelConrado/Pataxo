@@ -1,4 +1,7 @@
 let janelaMenu = document.getElementById('menu-hamburguer');
+const titulo = document.getElementById('titulo')
+const header = document.getElementById('header')
+
 function abrirMenu() {
 
     let navegacao = document.querySelector('.navegacao-container');
@@ -6,9 +9,15 @@ function abrirMenu() {
 
     if (navegacao.style.display === 'block') {
         navegacao.style.display = 'none';
+        header.style.justifyContent = 'space-between';
+        titulo.style.display = 'block';
+
         html.style.scrollbarWidth = '';
     } else {
         navegacao.style.display = 'block';
+        titulo.style.display = 'none';
+
+        header.style.justifyContent = 'flex-end';
         html.style.scrollbarWidth = 'none';
     }
 }
