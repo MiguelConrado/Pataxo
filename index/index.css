@@ -46,10 +46,9 @@ nav{
 #menu-hamburguer{
     font-size: 40px;
 }
-#menu-hamburguer:hover + .navegacao-container{
-    transform: translateY(0px);
+#menu-hamburguer:hover +.navegacao-container {
+    transform: translateY(0);
     opacity: 1;
-    
 }
 
 /* navegacao e link*/
