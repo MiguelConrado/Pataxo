@@ -129,9 +129,9 @@ nav{
 
     
     & p{
-        width: 370px;
+        width: 65%;
         word-wrap: break-word;
-        text-align: center;
+       text-align: center;
               
         z-index: 999;
         position: absolute;
