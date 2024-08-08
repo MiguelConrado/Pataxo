@@ -46,19 +46,12 @@ nav{
 #menu-hamburguer{
     font-size: 40px;
 }
-#menu-hamburguer:hover +.navegacao-container {
-    transform: translateY(0);
-    opacity: 1;
-}
-
 /* navegacao e link*/
 .navegacao-container{
     display: none;
     width: 200px;
  
     color: var(--corPrincipal);
-    transform: translateY(20px);
-    opacity: 0;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
