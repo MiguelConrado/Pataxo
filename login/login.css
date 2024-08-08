@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins,sans-serif;
+}
+:root{
+    --corPrincipal:rgb(26, 90, 150);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/povo-indigena.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(3, 114, 27, 0.644);
+}
+
+.container-login{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    padding: 20px;
+}
+
+.upper-case-login{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    font-size:14px;
+
+    & span{
+        color: white;
+        font-size: 30px;
+        display: flex;
+
+        position: absolute;
+        transform: translate(-25px, 10px);
+    }
+    & a{
+        color: transparent;
+    }
+}
+
+
+#login{
+    & input{
+        text-indent: 10px;
+        width: 100%;
+        padding:5px 0px ;
+    }
+}
