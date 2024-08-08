@@ -190,14 +190,17 @@ nav{
 
 footer{
     padding:20px;
+    width: 100%;
     transition: all 1s;
+    overflow-wrap: break-word;
 
     background-color: rgba(0, 0, 0, 0.938);
     color: white;
 
 }
 .container-contato-link{
+    padding: 5px 0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow-wrap: break-word;
+
 }
